@@ -1,0 +1,42 @@
+body{
+  background-color: lightblue;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#quote{
+  text-align: center;
+  color: #2D3250;
+}
+#author::before{
+  content: '- ';
+}
+#author{
+  text-align: right;
+  color: #424769;
+}
+#quoteDisplay{
+  width: 75%;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    margin: auto;
+  }
+  #quoteDisplay {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #quote {
+    text-align: justify;
+  }
+
+  #quoteDisplay {
+    width: 100%;
+  }
+}
